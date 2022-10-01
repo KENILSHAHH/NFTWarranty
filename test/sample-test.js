@@ -3,7 +3,7 @@ describe("NFTMarket", function() {
   it("Should create and execute market sales", async function() {
     /* deploy the marketplace */
     const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace")
-    const nftMarketplace = await NFTMarketplace.deploy()
+    const  nftMarketplace = await NFTMarketplace.deploy()
     await nftMarketplace.deployed()
 
     let listingPrice = await nftMarketplace.getListingPrice()

@@ -4,7 +4,7 @@ const privateKey=fs.readFileSync(".secret").toString();
 // const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
 require('dotenv').config();
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork:  "hardhat",
   networks: {
     hardhat: {
       chainId: 1337
